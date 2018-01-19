@@ -1,0 +1,132 @@
+JavaScript
+
+HTML makes a tree structure
+<script> exists in body as its own element 
+
+
+#!/bin/sh
+# run this script from your directory name it ./server
+# in your browser localhost::8000
+python3 -m http.server 8000
+
+Browser stores HTML tree for a page in memory. You can access it through the DOM API
+
+can get a JavaScript REPL
+
+atomic: number, string, boolean
+	var x = 5;
+	var str = "string";
+	var myBool = "true";
+
+non-atomic: object
+	var thing = {1: 5, b: 7};
+	thing[" yyz+"] = 22; // add stuff to it
+	thing.["a"] 
+	thing.a
+
+Web browsers either ignore your error or just crash, because they don't want little problems to bring down websites.
+This will cause problems for us if we are writing nontrivial applications.
+JavaScript does type coercion. 
+	5 == 5
+	5 == "5"
+	5 === "5"
+	
+JavaScript also kind of has arrays
+	var xs = [1,2,3,4]
+	semantically:
+		xs == {"0": 1, "1": 2, "2": 3, ... } // but it's optimized
+	xs["goat"] = "blue"; // now gets rid of optimization
+	
+# type coercion again
+[] == [] // false
+[] == ![] // true
+1 < 2 < 3 // ? 
+3 > 2 > 1 // ? 
+true > 1 // ? 
+
+
+You should not have to look up things like whether true is greater than 1 in order to make your life easier. 
+	In other words, don't do comparisons between types that don't already agree; pretend like that would always throw an error.
+	
+// FUNCTIONS
+
+// think of this like a prototype object
+function Posn(x, y) {
+	this.x = x;
+	this.y = y;
+	this.dist_from_origin = function () {
+		return Math.sqrt(this.x * this.x + this.y * this.y);
+		}
+	}
+	
+var = = new Posn(4, 7); 
+p // to print p on the REPL and show that it's another object
+p.dist_from_origin(); // to print 
+
+// JavaScript the good parts by Douglas Crawford to see two new ways to do objects
+// If you instantiate an object without the new keyword (system allocates the memory for us then "throws our dog in the ocean")
+// You need the new keyword any time you want an object with mehtod
+// Newer versions of JavaScript have the class keyword that may make my life easier 
+
+document.children // after opening up a console on your webpage
+document.children[0].children // array-like object that doesn't have all the methods an array does
+
+// HTML Collections (array-like objects) may do only two things 
+// 1. we can index them like an array
+// 2. we can look at its length 
+// ... => this means you need to use C-style loops
+
+// childNodes
+// innerText
+// you can set attributes on a DOM object and the browser will update the page immediately
+// you can create new elements and put them into the tree
+
+var new_h2 = document.createElement("h1");
+body.insertBefore(new_h2, h1);
+new_h2.innerText = "foo"
+
+// Think of webpages as a data structure in memory that we have an API to manipulate
+
+new_h2.remove 
+
+/*
+How to avoid manually traversing the tree to find elements
+	document.getELementById("<element-id>
+*/ 
+
+// JavaScript has one and only one namespace. 
+// Use anon functions to mask stuff 
+// Next week there is a newer type of JavaScript that has a module system
+// *** AVOID JAVSCRIPT THIS IF YOU CAN AND USE KOTLIN *** 
+// "use strict;" makes it so that it won't assign new values to misnamed or typoed implicitly declared variable 
+(function() {
+	// this is an anonymous function })() // use 
+
+// frequently just need one big anon funct (for what we'll need in this class)
+// once a function is bound to an event listener, it won't dissappear. 
+// the example code.js file is online in Nat's notes
+(function() {
+	"use strict";
+	
+	function init() {
+		// document.getElementsByTagName("p");
+		var hello = document.getElementById("hello").style.color = "purple";
+		document 
+	}
+  })
+  
+// to make an actual array in JavaScript
+Array.from(<array-like-object>)
+
+
+document.querySelector() // primarily used for CSS styling but is also convenient for use in JavaScript
+document.querySelectorAll() 
+
+// *** NEXT WEEK WE WILL USE JQUERY *** ^ 
+// next week: BootStrap, UnderScore (functional programming capabilities), React JS (virtualizes the tree structure so that we can have more responsive dynamic webpages)
+// next next week: Elixir 
+
+
+	
+
+

@@ -1,0 +1,88 @@
+Check Nat's notes
+	Nginx virtual hosts
+	History of web technologies
+
+Expecting that you know: 
+	Git (command line) 
+	Linux sysadmin tasks 
+	HTML / CSS 
+	Configuring an editor 
+	Other stuff? 
+
+Login to your domain
+Go to DNS settings ("records")
+	A ipv4
+	AAAA ipv6
+	CNAME aliases (hw01, www subdomains)
+	
+ssh into your domain
+Set up your websites (must be root) 
+	apt update 
+	apt upgrade 
+	apt install nginx # insalls web server
+	
+config for nginx is in /etc/nginx
+	ls -l sites-available/ 
+	ls -l sites-enabled/
+	
+	cd sites-available
+	create another config filenamed after  the domain
+	(go back to non-root user)
+	then do service nginx restart
+	mkdir /tmp/hello
+	ls 
+	# make sure host entries are set up correctly
+	
+	# to see the access logs
+	tail -f …
+	
+	# need to put it into sites enabled
+	
+	# create a new non-root user for every web site you deploy
+	
+	# ls -l /home to see which directories made and who they are owned by 
+	
+	# a user's website is under a directory called either www or public_html
+
+	# make the index.html file there
+	
+	
+	server {
+	listen 80;
+	listen [::]:80; # ipv6
+	
+	root / / / # what path to put here?
+	server_name hello.ironbeard.com; # ??? what's this for?
+	index index.html // default page to serve
+	
+	# http://hello.ironbeard.com/dir1/foo.txt
+	# protocol, subdomain, domain (server), path 
+	
+	
+	location / { # everything under the root directory
+		try_files $uri $uri/= 404;
+		}
+}
+
+chmod to change read write permissions
+ln to create symbolic links (sym link into sites enabled)
+create an html page (doctype, html, head (title), body) (make a template)
+scp or pulldown git repo
+learn how to pull down your git repo (use it to synch everything)
+read the docs
+
+
+If you f up your password you can access a console from your VPS provider
+
+# provide attribution for your source 
+	
+	
+	
+	
+	
+	
+
+	
+	
+
+	
