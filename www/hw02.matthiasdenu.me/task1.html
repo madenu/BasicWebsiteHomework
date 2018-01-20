@@ -27,35 +27,49 @@
     h2,
     h3,
     h4 {
+      margin: 0;
       font-family: Sansita;
       font-weight: 700;
       font-size: 5em;
-      margin: 0;
     }
 
     .button {
+      display: inline-block;
       margin-bottom: 0.125em;
       margin-left: 0.125em;
-      background-color: darkolivegreen;
-      border-color: darkolivegreen;
-      color: gray;
       padding: 1em;
+
+      cursor: pointer;
+      border-color: darkolivegreen;
+      background-color: darkolivegreen;
+
+      font-size: 2em;
       text-align: center;
       text-decoration: none;
-      display: inline-block;
-      font-size: 2em;
+    }
+
+    .button:hover {
+      opacity:0.8;
+      color: lavenderblush;
+    }
+
+    .button:hover a{
+      color: lavenderblush;
+      opacity:0.8;
     }
 
     a {
+      color: rgb(105,0,0);
       text-decoration: none;
     }
 
     a:hover {
       color: lavenderblush;
+      opacity:0.8;
     }
 
     a:visited {
-      color: gray;
+      color: rgb(105,0,0);
     }
 
     p {

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Sansita');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  min-width: 375px;
+  max-width: 1000px;
+  margin: auto;
+
+  color: gray;
+  background-color: darkslategray;
+
+  font-family: Oswald;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+
+  font-family: Sansita;
+  font-weight: 700;
+  font-size: 5em;
+}
+
+.button {
+  display: inline-block;
+  margin-bottom: 0.125em;
+  margin-left: 0.125em;
+  padding: 1em;
+
+  color: rgb(105,0,0);
+  background-color: darkolivegreen;
+  border-color: darkolivegreen;
+
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity:0.8;
+  color: lavenderblush;
+  cursor: pointer;
+}
+
+a {
+  color: rgb(105,0,0);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity:0.8;
+  color: lavenderblush;
+}
+
+a:visited {
+  color: gray;
+}
+
+p {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
+footer {
+  padding: 1em;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
