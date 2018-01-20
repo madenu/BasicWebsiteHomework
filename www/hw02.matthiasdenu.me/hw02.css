@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Sansita');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+
 body {
   min-width: 375px;
   max-width: 1000px;
@@ -18,13 +19,13 @@ h2,
 h3,
 h4 {
   margin: 0;
-
   font-family: Sansita;
   font-weight: 700;
-  font-size: 5em;
+  font-size: 10vw;
 }
 
 ul, ol {
+  padding: 0;
   list-style-type: none;
   list-style-position: outside;
 }
