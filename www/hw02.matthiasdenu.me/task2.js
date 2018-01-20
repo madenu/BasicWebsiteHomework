@@ -34,7 +34,7 @@
   // NOTE: the design choice was made to use prependChild() because it looks cooler
   function prepend() {
     var p = document.createElement("p");
-    p.setAttribute("style", "font-size: 3em; font-style: italic;");
+    p.setAttribute("style", "display: inline-block;  font-style: italic; font-size: 3em;");
     p.innerHTML = result;
     outputDisplay.prepend(p);
   }
