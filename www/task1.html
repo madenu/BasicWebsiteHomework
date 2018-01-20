@@ -3,101 +3,144 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>Task 1</title>
   <style>
+    @import url('https://fonts.googleapis.com/css?family=Oswald|Sansita');
+    @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-    * {
-      border-style: dotted;
-      border-color: black;
-      border-width: 1px;
+    body {
+      min-width: 375px;
+      max-width: 1000px;
+      margin: auto;
       background-color: darkslategray;
       color: gray;
       text-align: center;
-    }
-    img {
-      max-width: 100%;
-    }
-    
-    #tutorials div {
-      width: 50%;
-      margins: auto;
+      font-family: Oswald;
     }
 
-    article {
-      border-style: dotted;
-      border-color: pink;
-    }
-
-    /* #test-two {
-      width: 50%;
+    hr {
+      width: 75%;
       margin: auto;
-    } */
-
-    #tutorials section {
-      height: 4em;
-
     }
 
-    #tutorials .clearfix {
-      width: 50%;
-      margin: auto;
-      border-style: dotted;
-      border-color: pink;
-    }
-
-    #tutorials .clearfix p {
-      float: left;
-      margin-left: 2.5%;
-      padding:2.5%;
-      width:40%;
-      background-color: indianred;
-      border-radius: 0.25em;
-      border-style: dotted;
-      border-color: pink;
-      overflow: auto;
-      text-align: center;
-    }
-
-    #tutorials .clearfix p a {
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: Sansita;
+      font-weight: 700;
+      font-size: 5em;
       margin: 0;
-      padding: 0;
-      background-color: inherit;
+    }
+
+    .button {
+      margin-left: 0.125em;
+      background-color: darkolivegreen;
+      border-color: darkolivegreen;
+      color: gray;
+      padding: 1em;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 2em;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0)
+    }
+
+    a {
       text-decoration: none;
     }
 
-    #tutorials .clearfix::after {
-      content="";
-      clear: both;
-      display: table;
+    a:hover {
+      color: lavenderblush;
     }
 
+    a:visited {
+      color: gray;
+    }
+
+    p {
+      padding-left: 1.25em;
+      padding-right: 1.25em;
+    }
+
+    footer {
+      padding: 1em;
+    }
+
+    footer p {
+      margin: 0;
+      padding: 0;
+    }
+
+    #cows img {
+      width: 50%;
+      margin: auto;
+    }
+
+    #powers-of-two {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      #border-collapse: collapse;
+      width: 100%;
+    }
+
+    #powers-of-two td,
+    powers-of-two th {
+      border: 1px solid gray;
+      padding: 8px;
+    }
+
+    #powers-of-two tr:nth-child(even) {
+      background-color: lavenderblush;
+    }
+
+    #powers-of-two tr:hover {
+      background-color: #ddd;
+    }
+
+    #powers-of-two th {
+      font-size: 2em;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: darkolivegreen;
+      color: white;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Task 1</h1>
+  <h1>Task One</h1>
+  <hr>
   <article id="tutorials">
-    <h2>Assignment Instructions</h2>
+    <h2>Tutorials</h2>
     <section class="clearfix">
-      <p><a href="https://www.w3schools.com/html/default.asp">Learn HTML</a></p>
-      <p><a href="https://www.w3schools.com/html/default.asp">Learn CSS</a></p>
-    </div>
-  </section>
+      <div class=button><a href="https://www.w3schools.com/html/default.asp">Learn&nbsp;HTML</a></div>
+      <div class=button><a href="https://www.w3schools.com/html/default.asp">Learn&nbsp;CSS</a></div>
+    </section>
+  </article>
   <article id="cows">
-    <h2>Cows</h2>
-    <!-- Cow (Swiss Braunvieh breed), below Fuorcla
-Sesvenna in the Engadin, Switzerland. by Daniel Schwen
-https://en.wikipedia.org/wiki/Cattle#/media/File:CH_cow_2_cropped.jpg -->
-    <p><a href="https://en.wikipedia.org/wiki/Cattle"><img src="CH_cow_2_cropped.jpg"
-alt="A Swiss Braunvieh cow wearing a cowbell"/></a></p>
+    <h2>Cattle</h2>
+    <!-- Cow (Swiss
+Braunvieh breed), below Fuorcla Sesvenna in the Engadin, Switzerland. by Daniel
+Schwen https://en.wikipedia.org/wiki/Cattle#/media/File:CH_cow_2_cropped.jpg -->
+
+    <a href="https://en.wikipedia.org/wiki/Cattle"><img
+    src="CH_cow_2_cropped.jpg" alt="A Swiss Braunvieh cow wearing a
+    cowbell"/></a>
+    <p>The assignment instructions asked for a picture of an animal to be included along with a link to its Wikipedia article. I chose cattle because of the impact they have made on the planet. Cattle are able to graze on land that is not farmable by humans.
+      The domestication of the cow was important to humans. CAFOs that raise beef are a major surce of greenhouse gasses.</p>
   </article>
   <article id="math">
-    <h2>Powers of 2</h2>
-    <table style="width:100%">
+    <h2>Powers of Two</h2>
+    <table id="powers-of-two">
       <tr>
-        <th>x</th>
-        <th>2^x</th>
+        <th><var>x</var></th>
+        <th><var>2<sup>x</sup></var></th>
       </tr>
       <tr>
         <td>1</td>
@@ -136,9 +179,8 @@ alt="A Swiss Braunvieh cow wearing a cowbell"/></a></p>
   </article>
 </body>
 <footer>
-  <i class="material-icons">computer</i>
-  <i class="material-icons">school</i>
   <p>Matthias Denu</p>
+  <p><i class="material-icons">computer</i><i class="material-icons">school</i></p>
 </footer>
 
 </html>
