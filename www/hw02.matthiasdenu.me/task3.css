@@ -1,0 +1,53 @@
+.clearfix {
+  width: 100%;
+  padding: 1em;
+}
+
+.clearfix > * {
+  float: left;
+  width: 66%;
+  left: 33%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix ul {
+  left: 0;
+  width: 33%;
+  height: 100%;
+  background-color: inherit;
+}
+
+.clearfix ul li {
+  color: lavenderblush;
+}
+
+.clearfix ul li a {
+  color: lavenderblush;
+}
+
+.clearfix ul li:hover {
+  font-size: 110%;
+  font-style: italic;
+  color: lavenderblush;
+  cursor: pointer;
+}
+
+/* TODO do this with JavaScript on init */
+section:nth-child(2) {
+  background-color: darkolivegreen;
+}
+
+section:nth-child(3) {
+  display: none;
+  background-color: darkolivegreen;
+}
+
+p:nth-child(4) {
+  display: none;
+  background-color: darkolivegreen;
+}
