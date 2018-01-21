@@ -39,6 +39,15 @@ nav ul li a:hover {
   color: lavenderblush;
 }
 
+ul li a:hover {
+  opacity: 0.8;
+  color: lavenderblush;
+}
+
+ul li {
+  padding: 1em;
+}
+
 h1,
 h2,
 h3,
