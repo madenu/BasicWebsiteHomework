@@ -1,0 +1,42 @@
+
+Web Dev Spring 2018 HW02 Status
+
+Answer the following questions:
+
+1. What's your name?
+
+  Matthias Denu
+
+2. What's the URL of the github repo with your work for this HW?
+
+  https://github.com/matthiasdenu/cs5610hw02
+
+3. What's the URL that you deployed to?
+
+  http://hw02.matthiasdenu.me
+
+4. How many of the tutorial exercises did you really do?
+
+  All of the HTML and CSS tutorials. The JavaScript tutorials were annoying,
+  because they assumed no prior programming experience. I skipped those and went
+  to MDN and StackOverflow to figure things out.
+
+5. How comfortable do you feel with HTML and CSS now?
+
+  Comfortable
+
+6. How comfortable do you feel with JS and the DOM now?
+
+  Not comfortable
+
+7. Do all four of your pages pass the W3C HTML validator?
+ (https://validator.w3.org/)
+
+  Yes
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Submission
